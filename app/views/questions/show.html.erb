@@ -16,8 +16,8 @@
 </p>
 
 <p>
-  <strong>Acceptedanswer:</strong>
-  <%= @question.acceptedAnswer %>
+  <strong>Answers:</strong>
+  <%= @question.answers.count %>
 </p>
 
 <%= link_to 'Edit', edit_question_path(@question) %> |
