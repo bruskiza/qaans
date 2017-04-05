@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @question.text %>
+</p>
+
+<p>
+  <strong>Upvotecount:</strong>
+  <%= @question.upvoteCount %>
+</p>
+
+<p>
+  <strong>Downvotecount:</strong>
+  <%= @question.downvoteCount %>
+</p>
+
+<p>
+  <strong>Acceptedanswer:</strong>
+  <%= @question.acceptedAnswer %>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>
